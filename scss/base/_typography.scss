@@ -1,3 +1,8 @@
-li {
-  font-family: monospace;
+body {
+  font: 100% Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: axis;
+    src: url(../fonts/axis.otf);
 }
