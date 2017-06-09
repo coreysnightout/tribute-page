@@ -1,3 +1,9 @@
 body {
   margin: 0;
 }
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: 1000px
+);

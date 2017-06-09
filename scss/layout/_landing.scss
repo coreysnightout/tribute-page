@@ -3,6 +3,7 @@
   margin-top: 2%;
   margin-bottom: 2%;
 }
+
 .radius-logo img {
   border-radius: 50%;
   width: 50px;
@@ -11,23 +12,21 @@
 }
 
 .land-page {
-  width: 100%;
-  height: 50px;
-  &.land-page img {
-    width: 100%;
-    overflow: hidden;
-  }
-  &.sketcho {
-    text-align: center;
-    margin-top: 50px;
-    height: 40px;
-    color: black;
-    font-family: axis;
+  @include small {
+    &.land-page img {
+      width: 90%;
+      margin: 0 5%;
+    }
   }
 }
 
-// .navbar {
-//   @include desktop {
-//     display: none;
-//   }
-// }
+.land-page {
+  @include medium {
+    width: 95%;
+    height: 400px;
+    overflow: scroll;
+    margin: 0 2.5%;
+    // border: 8px solid black;
+    // border-radius: 4px;
+  }
+}

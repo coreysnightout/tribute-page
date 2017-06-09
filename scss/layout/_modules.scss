@@ -1,0 +1,19 @@
+.card-1 {
+  @include small {
+    &.card-1 img {
+      float: left;
+      width: 40%;
+      margin: 2% 5%;
+    }
+  }
+}
+
+.card-2 {
+  @include small {
+    &.card-2 img {
+      float: left;
+      width: 40%;
+      margin: 2% 5%;
+    }
+  }
+}
