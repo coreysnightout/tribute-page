@@ -14,10 +14,16 @@ li {
   padding-left: 4px;
   color: white;
   font-family: axis;
+  font-size: 12px;
+  text-decoration: underline;
 }
 
 ul {
   list-style: none;
   float: right;
   margin-right: 20px;
+}
+
+li:hover {
+  color: $goldy;
 }

@@ -1,0 +1,25 @@
+.radius-logo {
+  width: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.radius-logo img {
+  border-radius: 50%;
+  width: 50px;
+  margin-left: 100%;
+  transform: translateX(-25px);
+}
+
+.land-page img {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.land-page h1 {
+  font-family: axis;
+  position: absolute;
+  top: 25%;
+  color: $goldy;
+  font-size: 100%;
+}

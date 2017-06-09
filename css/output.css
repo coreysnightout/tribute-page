@@ -7,6 +7,29 @@ body {
 body {
   margin: 0; }
 
+.radius-logo {
+  width: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.radius-logo img {
+  border-radius: 50%;
+  width: 50px;
+  margin-left: 100%;
+  transform: translateX(-25px); }
+
+.land-page img {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0; }
+
+.land-page h1 {
+  font-family: axis;
+  position: absolute;
+  top: 25%;
+  color: #e7cd66;
+  font-size: 100%; }
+
 .navbar {
   height: 59px;
   padding-top: 5px;
@@ -21,11 +44,16 @@ li {
   display: inline-block;
   padding-left: 4px;
   color: white;
-  font-family: axis; }
+  font-family: axis;
+  font-size: 12px;
+  text-decoration: underline; }
 
 ul {
   list-style: none;
   float: right;
   margin-right: 20px; }
+
+li:hover {
+  color: #e7cd66; }
 
 /*# sourceMappingURL=output.css.map */
