@@ -10,16 +10,24 @@
   transform: translateX(-25px);
 }
 
-.land-page img {
+.land-page {
   width: 100%;
-  overflow: hidden;
-  margin-top: 0;
+  height: 50px;
+  &.land-page img {
+    width: 100%;
+    overflow: hidden;
+  }
+  &.sketcho {
+    text-align: center;
+    margin-top: 50px;
+    height: 40px;
+    color: black;
+    font-family: axis;
+  }
 }
 
-.land-page h1 {
-  font-family: axis;
-  position: absolute;
-  top: 25%;
-  color: $goldy;
-  font-size: 100%;
-}
+// .navbar {
+//   @include desktop {
+//     display: none;
+//   }
+// }

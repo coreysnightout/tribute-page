@@ -18,17 +18,18 @@ body {
   margin-left: 100%;
   transform: translateX(-25px); }
 
-.land-page img {
+.land-page {
   width: 100%;
-  overflow: hidden;
-  margin-top: 0; }
-
-.land-page h1 {
-  font-family: axis;
-  position: absolute;
-  top: 25%;
-  color: #e7cd66;
-  font-size: 100%; }
+  height: 50px; }
+  .land-page.land-page img {
+    width: 100%;
+    overflow: hidden; }
+  .land-page.sketcho {
+    text-align: center;
+    margin-top: 50px;
+    height: 40px;
+    color: black;
+    font-family: axis; }
 
 .navbar {
   height: 59px;

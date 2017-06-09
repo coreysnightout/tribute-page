@@ -1,0 +1,14 @@
+$medium-width: 768px;
+$large-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
