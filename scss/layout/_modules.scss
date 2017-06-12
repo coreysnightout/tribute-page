@@ -73,19 +73,73 @@
 .card-4 {
   @include medium {
     &.card-4 img {
-      float: left;
+      // float: left;
       width: 40%;
       margin: 2% 5%;
     }
   }
 }
 
+.card-1 {
+  @include large {
+    &.card-1 img {
+      width: 200px;
+      float: left;
+      margin: 2%;
+    }
+  }
+}
+
+.card-two {
+  @include large {
+    &.card-two img {
+      width: 200px;
+      float: left;
+      margin: 2%;
+    }
+  }
+}
+.card-3 {
+  @include large {
+    &.card-3 img {
+      width: 200px;
+      float: left;
+      margin: 2%;
+    }
+  }
+}
+
+.card-4 {
+  @include large {
+    &.card-4 img {
+      width: 200px;
+      float: left;
+      margin: 2%;
+    }
+  }
+}
+
+.card-two, .fart1  {
+  @include large {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    float: left;
+  }
+}
+
+.module-cards {
+  @include large {
+    width: 100%;
+    margin: 2% auto;
+  }
+}
+// video content resizing //
 .video {
   @include small {
-    & iframe {
+      & iframe {
       width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin: 20px 5%;
       border-top: 3px black solid;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -96,14 +150,31 @@
 
 .video {
   @include medium {
-    & iframe {
+      & iframe {
       width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
-      border-top: 3px $goldy solid;
+      height: 340px;
+      margin: 20px 5%;
+      border-top: 3px black solid;
       padding-top: 10px;
       padding-bottom: 10px;
-      border-bottom: 3px $goldy solid;
+      border-bottom: 3px black solid;
+    }
+  }
+}
+
+
+.video {
+  @include large {
+      & iframe {
+      width: 40%;
+      float: left;
+      margin: 2% 5%;
+      border: none;
+    }
+    & .content-border {
+      width: 90%;
+      border-top: 3px black solid;
+      border-bottom: 3px black solid
     }
   }
 }
