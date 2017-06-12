@@ -83,7 +83,27 @@
 .video {
   @include small {
     & iframe {
-      width: 100%;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-top: 3px black solid;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px black solid;
+    }
+  }
+}
+
+.video {
+  @include medium {
+    & iframe {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-top: 3px $goldy solid;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px $goldy solid;
     }
   }
 }

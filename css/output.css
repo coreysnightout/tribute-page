@@ -106,7 +106,23 @@ li:hover {
 
 @media (min-width: 320px) {
   .video iframe {
-    width: 100%; } }
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 3px black solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px black solid; } }
+
+@media (min-width: 768px) {
+  .video iframe {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 3px #e7cd66 solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px #e7cd66 solid; } }
 
 body {
   -moz-box-sizing: border-box;
