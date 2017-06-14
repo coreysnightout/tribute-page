@@ -1,7 +1,14 @@
 .module-cards h2 {
   text-align: center;
   font-family: axis;
+  color: black;
 }
+// use of extend!!//
+.module-cards h2:hover {
+  @extend li:hover;
+}
+
+
 
 .card-1 {
   @include small {
