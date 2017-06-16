@@ -4,6 +4,12 @@ body {
 @font-face {
   font-family: axis;
   src: url(../fonts/axis.otf); }
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   margin: 0; }
 
@@ -27,7 +33,7 @@ body {
   .land-page {
     width: 95%;
     height: 350px;
-    overflow: scroll;
+    overflow: hidden;
     margin: 0 2.5%; } }
 
 .navbar {
@@ -36,9 +42,10 @@ body {
   background: black; }
 
 .navbar img {
-  width: 170px;
+  width: 125.0px;
   float: left;
-  z-index: 2; }
+  z-index: 2;
+  margin-left: 10px; }
 
 li {
   display: inline-block;
@@ -52,7 +59,8 @@ li {
       display: none; } }
   @media (min-width: 768px) {
     li {
-      display: inline-block; } }
+      display: inline-block;
+      margin-top: -15px; } }
 
 .navbar .bars {
   width: 20px;
@@ -68,79 +76,16 @@ ul {
   margin-right: 20px; }
 
 li:hover, .module-cards h2:hover {
-  color: #e7cd66; }
+  color: #e7cd66;
+  color: #e0bf3a; }
 
 .module-cards h2 {
   text-align: center;
   font-family: axis;
   color: black; }
 
-@media (min-width: 320px) {
-  .card-1.card-1 img {
-    width: 90%;
-    margin: 10px 5%; } }
-
-@media (min-width: 320px) {
-  .card-two.card-two img {
-    width: 90%;
-    margin: 50px 5%; } }
-
-@media (min-width: 320px) {
-  .card-3.card-3 img {
-    width: 90%;
-    margin: 10px 5%; } }
-
-@media (min-width: 320px) {
-  .card-4.card-4 img {
-    width: 90%;
-    margin: 10px 5%; } }
-
-@media (min-width: 768px) {
-  .card-1.card-1 img {
-    float: left;
-    width: 40%;
-    margin: 2% 5%; } }
-
-@media (min-width: 768px) {
-  .card-two.card-two img {
-    float: left;
-    width: 40%;
-    margin: 2% 5%; } }
-
-@media (min-width: 768px) {
-  .card-3.card-3 img {
-    float: left;
-    width: 40%;
-    margin: 2% 5%; } }
-
-@media (min-width: 768px) {
-  .card-4.card-4 img {
-    width: 40%;
-    margin: 2% 5%; } }
-
-@media (min-width: 1024px) {
-  .card-1.card-1 img {
-    width: 20%;
-    float: left;
-    margin: 2.5%; } }
-
-@media (min-width: 1024px) {
-  .card-two.card-two img {
-    width: 20%;
-    float: left;
-    margin: 2.5%; } }
-
-@media (min-width: 1024px) {
-  .card-3.card-3 img {
-    width: 20%;
-    float: left;
-    margin: 2.5%; } }
-
-@media (min-width: 1024px) {
-  .card-4.card-4 img {
-    width: 20%;
-    float: left;
-    margin: 2.5%; } }
+.module-cards h2:hover {
+  color: #e0bf3a; }
 
 @media (min-width: 1024px) {
   .module-cards {
@@ -148,6 +93,73 @@ li:hover, .module-cards h2:hover {
     height: auto;
     overflow: scroll;
     margin: 0 5%; } }
+
+@media (min-width: 320px) {
+  .card-1.card-1 img {
+    width: 90%;
+    margin: 10px 5%; } }
+
+@media (min-width: 768px) {
+  .card-1.card-1 img {
+    float: left;
+    width: 40%;
+    margin: 2% 5%; } }
+
+@media (min-width: 1024px) {
+  .card-1.card-1 img {
+    width: 20%;
+    float: left;
+    margin: 2.5%; } }
+
+@media (min-width: 320px) {
+  .card-two.card-two img {
+    width: 90%;
+    margin: 50px 5%; } }
+
+@media (min-width: 768px) {
+  .card-two.card-two img {
+    float: left;
+    width: 40%;
+    margin: 2% 5%; } }
+
+@media (min-width: 1024px) {
+  .card-two.card-two img {
+    width: 20%;
+    float: left;
+    margin: 2.5%; } }
+
+@media (min-width: 320px) {
+  .card-3.card-3 img {
+    width: 90%;
+    margin: 10px 5%; } }
+
+@media (min-width: 768px) {
+  .card-3.card-3 img {
+    float: left;
+    width: 40%;
+    margin: 2% 5%; } }
+
+@media (min-width: 1024px) {
+  .card-3.card-3 img {
+    width: 20%;
+    float: left;
+    margin: 2.5%; } }
+
+@media (min-width: 320px) {
+  .card-4.card-4 img {
+    width: 90%;
+    margin: 10px 5%; } }
+
+@media (min-width: 768px) {
+  .card-4.card-4 img {
+    width: 40%;
+    margin: 2% 5%; } }
+
+@media (min-width: 1024px) {
+  .card-4.card-4 img {
+    width: 20%;
+    float: left;
+    margin: 2.5%; } }
 
 @media (min-width: 320px) {
   .video iframe {
@@ -164,7 +176,7 @@ li:hover, .module-cards h2:hover {
     height: 340px;
     margin: 20px 5%;
     border-top: 3px black solid;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 10px;
     border-bottom: 3px black solid; } }
 
@@ -178,6 +190,45 @@ li:hover, .module-cards h2:hover {
     width: 90%;
     border-top: 3px black solid;
     border-bottom: 3px black solid; } }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.content-border {
+  height: 300px; }
+
+.content-border p {
+  height: 300px;
+  overflow: scroll;
+  text-align: justify; }
+
+.about-info h3 {
+  font-family: axis;
+  margin: 0px;
+  margin-bottom: 2px; }
+
+.about-info h3:hover {
+  color: #e7cd66;
+  color: #e0bf3a; }
+
+@media (min-width: 320px) {
+  .about-info {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .about-info {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .about-info {
+    display: block;
+    margin: 0 5%;
+    width: 40%;
+    float: right;
+    padding-top: 10px;
+    overflow: hidden; } }
 
 body {
   -moz-box-sizing: border-box;

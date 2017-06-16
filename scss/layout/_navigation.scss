@@ -4,9 +4,10 @@
   background: black;
 }
 .navbar img {
-  width: 170px;
+  width: 125.0px;
   float: left;
   z-index: 2;
+  margin-left: 10px;
 }
 
 li {
@@ -21,6 +22,7 @@ li {
   }
   @include medium {
     display: inline-block;
+    margin-top: -15px;
   }
 }
 
@@ -40,6 +42,8 @@ ul {
   margin-right: 20px;
 }
 
+// use of bourbon darken //
 li:hover {
   color: $goldy;
+  color: darken($goldy, $percent);
 }

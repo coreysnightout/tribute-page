@@ -19,14 +19,11 @@
     }
   }
 }
-
 .land-page {
   @include medium {
     width: 95%;
     height: 350px;
-    overflow: scroll;
+    overflow: hidden;
     margin: 0 2.5%;
-    // border: 8px solid black;
-    // border-radius: 4px;
   }
 }
